@@ -1,0 +1,16 @@
+<ngx-loading [show]="loading"></ngx-loading>
+<div class="container">
+  <h1>Portal de calificaciones de llamadas</h1>
+  <div class="col text-center">
+    <button (click)="obtenerCalificaciones(textoBtn)" class="btn btn-success"> {{textoBtn}} <i class="fa fa-eye" aria-hidden="true"></i></button>
+  </div>
+  <div *ngFor="let item of listaLlamadas" class="card-group">
+      <div  class="card text-center border-info card-prop animate__animated animate__backInRight">
+        <div class="card-body animate__animated animate__backInLeft">
+          <h4 class="card-title">Llamada {{item.numeroLlamada}}</h4>
+          <p class="card-text">Puntaje: {{item.puntosLlamada}}</p>
+          <star-rating value="5" totalstars={{item.calificacionLlamada}} checkedcolor="gold" uncheckedcolor="black" size="24px" readonly="true"></star-rating>
+        </div>
+    </div>
+  </div>
+</div>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "portal-llamadas"
+    }
+  },
+  "defaultProject": "portal-llamadas",
+  "cli": {
+    "analytics": "45365bf3-9df8-44a2-b539-cf84e85d1d06"
+  }
 }

@@ -1,0 +1,37 @@
+h1 {
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  text-shadow: 0px 0px 4px gray;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
+.card-prop{
+  margin: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+button {
+  border: 0;
+  border-radius: 25px;
+  padding: 10px;
+  transition-duration: 0.4s;
+  width: 20%;
+}
+
+button:hover {
+  background-color: white;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+i{
+  margin: 5px;
+}
+
+p{
+  color: #f3c623;
+}
