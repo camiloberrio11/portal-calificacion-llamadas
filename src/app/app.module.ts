@@ -1,3 +1,4 @@
+import { CalificacionLlamadaService } from './calificacion-llamada/calificacion-llamada.service';
 import { Dbfake } from './calificacion-llamada/simulatedata';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -7,6 +8,9 @@ import { AppComponent } from './app.component';
 import { CalificacionLlamadaComponent } from './calificacion-llamada/calificacion-llamada.component';
 import { NgxLoadingModule } from 'ngx-loading';
 import { RatingModule } from 'ng-starrating';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +22,11 @@ import { RatingModule } from 'ng-starrating';
     BrowserModule,
     AppRoutingModule,
     NgxLoadingModule.forRoot({}),
-    RatingModule
+    RatingModule,
+    HttpModule,
+    HttpClientModule
   ],
-  providers: [Dbfake],
+  providers: [Dbfake, CalificacionLlamadaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
