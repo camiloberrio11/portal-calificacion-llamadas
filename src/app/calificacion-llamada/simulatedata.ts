@@ -3,24 +3,24 @@ export class Dbfake {
     EsExitoso: true,
     Resultado: [
       {
-        numeroLlamada: 1,
-        calificacionLlamada: 2,
-        puntosLlamada: 20
+        numero: 1,
+        calificacion: 5,
+        puntos: 100
       },
       {
-        numeroLlamada: 2,
-        calificacionLlamada: 1,
-        puntosLlamada: 1
+        numero: 2,
+        calificacion: 5,
+        puntos: 100
       },
       {
-        numeroLlamada: 3,
-        calificacionLlamada: 3,
-        puntosLlamada: 10
+        numero: 3,
+        calificacion: 3,
+        puntos: 60
       },
       {
-        numeroLlamada: 4,
-        calificacionLlamada: 5,
-        puntosLlamada: 5
+        numero: 4,
+        calificacion: 0,
+        puntos: 0
       }
     ],
     Errors: [null]
